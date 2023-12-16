@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Acme', sans-serif;
+    
+}
+
+#container{
+    width: 100%;
+    height: 100vh;  /* 1vh=19.2px */
+    position:  relative; /* positon relative to its normal position */
+    background-color: white;
+}
+
+#logo{
+    width: 100px;
+   
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 100px;
+}
+
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+
+}
+.links:hover{
+    color: red;
+}
+
+.title{
+    margin-left: 6%;
+    margin-top: 13% ;
+}
+.title_h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#lastname{
+    color: rgb(240, 182, 10);
+}
+#download{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin:20px 0px ;
+    display: inline-block;   
+    {it respects both bottom and top margins & paddings}
+    border-radius: 10px;
+}
+.images{
+    width: 45%;
+    height: 85%;
+    bottom: 0px;
+    right: 40px;
+    position: absolute;
+}
+
+#man{
+    width: 600px;
+    height: 600px;
+   
+    transform: translatex(-25%);
+}
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50px;
+    transition: bottom 1s, left 1s;
+}
+.images:hover #shape{
+    bottom: 60px;
+}
+.images:hover #man{
+    left:40px ;
+}
+
+#about{
+    margin: 20% 8% 0% 8%;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    
+    font-size: 35px;
+}
+.heading span{
+    color: green;
+    font-size: 20px;
+}
+#chead{
+    font-size: 30px;
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns:repeat( 2,  1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.about_image img{
+    width: 80%;
+    border-radius: 10px;
+}
+.about_para{
+    text-align: justify;
+    font-size: 19px;
+    font-weight: 500;
+}
+.information{
+    margin-top: 1rem;
+}
+.infobox{
+   margin-bottom: 1rem;
+   align-items: center;
+   font-size: 19px;
+}
+.infobox span{
+    margin-left: 1rem;
+}
+.skills{
+    text-align: center;
+}
+.skills h1{
+    font-size: 35px;
+}
+.skills span{
+    color: rgb(255, 47, 0);
+    font-size: 20px;
+}
+#skill{
+    margin: 8% 8% 0% 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+.skill_img{
+   padding-left: 4rem;
+   object-position: center;
+   margin-top: -90px;
+}
+.progress_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem opx;
+    position: relative;
+}
+.progress_bar span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.base_bar{
+    width: 100%;
+    height: .5rem;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 1rem;
+}
+.html_bar{
+   background-color: orange;
+   width: 95%;
+}
+.css_bar{
+    background-color: orange;
+    width: 88%;
+}
+.js_bar{
+    background-color: orange;
+    width: 89%;  
+}
+.react_bar{
+    background-color: orange;
+    width: 85%;  
+}
+.icon_set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.icon ,.uparrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: opx 15px;
+}
+
+.icon i{
+    color: black;
+    font-size: 1.5rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, orange, red);
+}
+.icon:hover i{
+    color: white;
+    animation: shake 1s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+footer p{
+    text-align: center;
+    margin-top: 2rem;
+}
+.uparrow{
+    background-image: linear-gradient(to bottom right, orange, red);
+   float: right;
+   margin: 10px 20px 50px 0px;  
+}
+.uparrow:hover i{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
